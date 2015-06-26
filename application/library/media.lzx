@@ -1,0 +1,96 @@
+<library>
+	<ipc name="sectionListener">
+		<!-- listen to attribute change event-->
+		<handler name="onsectionName">
+
+			//Debug.write("changed value sectionName='" + sectionName + "' selectedItem='" +selectedItem + "' " + +logo + " " + +summaryVal + " " + +detailedVal);
+			//Debug.write("summaryTabName='" + summaryTabName + "' detailedTabName='" + detailedTabName + "'");
+		</handler>
+		<handler name="ondetailedVal">
+
+			//Debug.write("detailedVal='" + detailedVal + "'");
+			te1text.setAttribute("text", detailedVal);
+			t.selectItemAt(0);
+			var detailedVal2 = dp30.xpathQuery("ds30:/content/section[@name='"
+					+ sectionName + "']/item[@name='" + selectedItem
+					+ "']/*[@text='Details2']/text()");
+			//Debug.write("detailedVal2='" + detailedVal2 + "'");
+			if (detailedVal2 != null) {
+				te2text.setAttribute("text", detailedVal2);
+				te2.setAttribute("visible", true);
+				te1next.setAttribute("visible", true);
+			} else {
+				//te2.setAttribute("visible", false);
+				te1next.setAttribute("visible", false);
+			}
+			var detailedVal3 = dp30.xpathQuery("ds30:/content/section[@name='"
+					+ sectionName + "']/item[@name='" + selectedItem
+					+ "']/*[@text='Details3']/text()");
+			//Debug.write("detailedVal3='" + detailedVal3 + "'");
+			if (detailedVal3 != null) {
+				te3text.setAttribute("text", detailedVal3);
+				te3.setAttribute("visible", true);
+				te2next.setAttribute("visible", true);
+			} else {
+				//te3.setAttribute("visible", false);
+				//te2next.setAttribute("visible", false);
+			}
+		</handler>
+	</ipc>	
+
+	<class name="external">
+		<handler name="oninit">
+		<![CDATA[
+
+			ds10.setAttribute("src", "application/xml/mediaSection.xml");
+			ds10.doRequest();
+			ds30.setAttribute("src", "application/xml/mediaContent.xml");
+			ds30.doRequest();
+			//disable the default logo animation
+			//secondary.unregister(lz.GlobalMouse, "onmouseover");
+			//secondary.unregister(lz.GlobalMouse, "onmouseout");
+			topicSubjectView.setAttribute("x", t.x + t.width + 10);
+			topicSubjectView.setAttribute("visible", true);
+		]]>
+		</handler>
+		<view y="${this.parent.parent.y+10}" x="${this.parent.parent.x-10}">
+			<tabslider id="t" width="250" height="${canvas.height*.83}" inset_left="20"
+				inset_top="20">
+				<tabelement id="te1" text="Level 1" layout="spacing:8">
+					<text id="te1text" multiline="true" width="200">
+						Blank
+					</text>
+					
+					<button id="te1next" isdefault="true"
+						onclick="parent.parent.selectNext()" visible="te1chkbx.getAttribute('value')">
+								Next</button>
+				</tabelement>
+				<tabelement id="te2" text="Level 2" layout="spacing:8" visible="false">
+					<text id="te2text" multiline="true" width="200">
+						Blank
+					</text>
+
+					<button id="te2back" isdefault="true"
+						onclick="parent.parent.selectPrev()">
+								Back</button>
+					<button id="te2next" isdefault="true"
+						onclick="parent.parent.selectNext()">
+								Next</button>
+				</tabelement>
+
+				<tabelement id="te3" text="Level 3" layout="spacing:8" visible="false">
+					<text id="te3text" multiline="true" width="200">
+						Blank
+					</text>
+					
+					<button id="te3back" isdefault="true"
+						onclick="parent.parent.selectPrev()">
+								Back</button>
+				</tabelement>
+
+
+			</tabslider>
+		</view>
+		<simplelayout axis="x" spacing="40" />
+	</class>
+</library>

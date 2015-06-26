@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content name="Topic">
+  <section name="4g">
+    <item name="1-Glory (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator expressed a desire to leave a personal legacy for history?</data>
+      <data text="Background2" id="Theater-Glory-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator already outlined plans for increasing his legacy?</data>
+    </item>
+    <item name="2-Glory" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator seek rewards in another life (based on ideology, religion, cult, or sense of historical destiny)?</data>
+    </item>
+    <item name="3-Glory" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator relate to the world in terms of defeating or prevailing over  neighbors, competitors, and adversaries?</data>
+    </item>
+    <item name="4-Glory (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator feel victimized and seek retribution?</data>
+      <data text="Background2" id="Theater-Glory-2-C6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator blame others for his/own failings?</data>
+      <data text="Background3" id="Theater-Glory-3-D6" notapplicable="false" rating="0" confidence="0" comments="">Is there evidence of social climbing, or status-seeking behavior, in Terminator that manifests itself in a quest for power and influence domestically?</data>
+    </item>
+    <item name="5-Glory" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator seek a "greater glory" in empire, hegemony, resurrection of past civilizations, or dominance?</data>
+    </item>
+    <item name="6-Glory (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a perceived genuine interest in improving his country and society?</data>
+      <data text="Background2" id="Theater-Glory-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator asserting rights of his constituency or people, as part of the liberation, self-determination, or autonomy of a persecuted group?</data>
+      <data text="Background3" id="Theater-Glory-3-D4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator envision a better future (peace, prosperity, freedom) as the motivating force for political action?</data>
+    </item>
+    <item name="7-Glory (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator see his/her country's natural resources (e.g., gas, oil, minerals, water,) as instruments of national domination?</data>
+      <data text="Background2" id="Theater-Glory-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator seek to use these resources to threaten or dominate other states?</data>
+    </item>
+    <item name="8-Glory (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator grown up, or been historically socialized, in an anti-western culture?</data>
+      <data text="Background2" id="Theater-Glory-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator duty-bound (i.e.,  because of professional obligations) or honor-bound (i.e., because of cultural background) to oppose the US?</data>
+      <data text="Background3" id="Theater-Glory-3-D7" notapplicable="false" rating="0" confidence="0" comments="">Are there splits in Terminator's constituency with factions that tend to favor cooperation with the US  with others opposed?</data>
+    </item>
+    <item name="9-Glory" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator see technology advantages to achieving national or personal glory (e.g.,  nuclear power or weaponry, missile technology, space exploration, telecommunications, etc.)?</data>
+    </item>
+    <item name="10-Greed (1)" keyword="Political, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Does the control of natural resources directly impact the power of Terminator?</data>
+      <data text="Background2" id="Theater-Greed-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Have there been credible allegations of corruption in relation to personal accumulation of wealth from natural resources?</data>
+    </item>
+    <item name="11-Greed (2)" keyword="Political, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have personal control, or aspirations to gain personal control, over property or  territory?</data>
+      <data text="Background2" id="Theater-Greed-2-C8" notapplicable="false" rating="0" confidence="0" comments="">If not, does that lack of control negatively impact Terminator?</data>
+      <data text="Background3" id="Theater-Greed-3-D8" notapplicable="false" rating="0" confidence="0" comments="">Are Terminator's personal financial records subject to financial disclosure?</data>
+    </item>
+    <item name="12-Greed (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Are there credible allegations of financial corruption within leadership?</data>
+      <data text="Background2" id="Theater-Greed-2-C9" notapplicable="false" rating="0" confidence="0" comments="">If yes, do the allegations include specific individuals within Terminator's group?</data>
+      <data text="Background3" id="Theater-Greed-3-D9" notapplicable="false" rating="0" confidence="0" comments="">Are specific individuals within Terminator's group seen in one of the following  ways: as beneficiaries personally, operating as middle men for others, or as part of a wider clique of corrupt officials?</data>
+    </item>
+    <item name="13-Greed" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator engage personally in illegal exploitation or trafficking of goods?</data>
+    </item>
+    <item name="14-Greed" keyword="Political, Religious, Security, Intelligence, Economic" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have personal control over exploitation of natural resources, e.g., granting contracts, passing legislation, regulatory control, licensing, and other "musts" for industrial transactions?</data>
+    </item>
+    <item name="15-Greed" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have personal control, or aspirations to gain personal control, over property or  territory?</data>
+    </item>
+    <item name="16-Greed (1)" keyword="Political, Security, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a constituency dependent upon his/her personal largesse?</data>
+      <data text="Background2" id="Theater-Greed-2-C3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator solicit/accept bribes?</data>
+    </item>
+    <item name="17-Greed (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator using public office to provide extraordinary benefits or favors to a particular constituency, elite group, clan or family?</data>
+      <data text="Background2" id="Theater-Greed-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Is the public aware of this through press reports or official investigations?</data>
+      <data text="Background3" id="Theater-Greed-3-D2" notapplicable="false" rating="0" confidence="0" comments="">Has official corruption negatively affected the country (through, for example, decreased legitimacy of the gov't, lost foreign investment, reduction in foreign aid or credit ratings, or sanctions)?</data>
+    </item>
+    <item name="18-Greed (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Is there a belief, or evidence, that Terminator is accumulating excessive wealth from his/her office?</data>
+      <data text="Background2" id="Theater-Greed-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator associated with corruption allegations related to personal wealth?</data>
+      <data text="Background3" id="Theater-Greed-3-D1" notapplicable="false" rating="0" confidence="0" comments="">Have there been corruption charges against Terminator filed in court, external indictments, or investigations?</data>
+    </item>
+    <item name="19-Glory (1)" keyword="Political " details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Glory-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator seek power for his/her own sake, with no limits, to achieve glory as a great leader?</data>
+      <data text="Background2" id="Theater-Glory-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator willing to bear heavy costs in terms of his/her own country's lives and treasure to pursue and maintain power?</data>
+    </item>
+    <item name="20-Governance (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator seen by his constituency as contributing to good governance (e.g., representing their interests, honest, dedicated, and providing public goods, such as education, housing,  health, transportation, sanitation)?</data>
+      <data text="Background2" id="Theater-Governance-2-C3" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator's constituency benefited in public services, redress of grievances, quality of life and opportunity?</data>
+      <data text="Background3" id="Theater-Governance-3-D3" notapplicable="false" rating="0" confidence="0" comments="">Do the people feel that they have suffered under Terminator's leadership ?</data>
+    </item>
+    <item name="21-Governance (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator considered to be governing in the public's interest?</data>
+      <data text="Background2" id="Theater-Governance-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a record of success in his/her leadership skills?</data>
+    </item>
+    <item name="22-Governance" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does the military have major influence on Terminator?</data>
+    </item>
+    <item name="23-Governance (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Are there constitutional or legal limits to Terminator holding office (term limits)?</data>
+      <data text="Background2" id="Theater-Governance-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator stayed in office for more than 10 years?</data>
+    </item>
+    <item name="24-Governance (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator in a position to attain political power through constitutional means?</data>
+      <data text="Background2" id="Theater-Governance-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator willing and able to form alliances, compromise, and be accountable for his actions?</data>
+    </item>
+    <item name="25-Grievance" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B8" notapplicable="false" rating="0" confidence="0" comments="" />
+    </item>
+    <item name="26-Governance (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a negative attitude toward the issue being considered in this case?</data>
+      <data text="Background2" id="Theater-Governance-2-C8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a positive attitude toward the issue being considered in this case?</data>
+    </item>
+    <item name="27-Grievance" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's political rhetoric full of "hate speech" or nationalistic slogans that  single out particular groups to blame for the nation's or constituency's misfortunes?</data>
+    </item>
+    <item name="28-Governance (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator likely to be positively influenced on the issue based on the method under consideration in this case?</data>
+      <data text="Background2" id="Theater-Governance-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator likely to be negatively influenced on the issue based on the method under consideration in this case?</data>
+    </item>
+    <item name="29-Grievance (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's group locked in a cycle of revenge and looking for retribution?</data>
+      <data text="Background2" id="Theater-Grievance-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the backing of  his constituency in seeking revenge?</data>
+      <data text="Background3" id="Theater-Grievance-3-D4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have access to the resources needed to stage a coup d'etat, mass protest, or insurgency?</data>
+    </item>
+    <item name="30-Governance" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been responsible for major decisions/policies that have hurt the country politically, economically or socially?</data>
+    </item>
+    <item name="31-Grievance (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator made provocative decisions that tap into group grievance (e.g., revoke the autonomy of a province; deny linguistic/religious/ or cultural rights; persecute leaders who are spokespersons for the group;  refuse equal rights for the group members)?</data>
+      <data text="Background2" id="Theater-Grievance-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Are  external parties negatively influencing the decisions of Terminator that destabilize the situation?</data>
+    </item>
+    <item name="32-Governance (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Governance-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a conflict of interest between what is good for his/her private interests and those of the country as a whole?</data>
+      <data text="Background2" id="Theater-Governance-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Have those conflicts of interest been made public?</data>
+    </item>
+    <item name="33-Grievance (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator mobilize support by appealing to group identities?</data>
+      <data text="Background2" id="Theater-Grievance-2-C6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the ability to create popular support for armed resistance to redress group grievance?</data>
+      <data text="Background3" id="Theater-Grievance-3-D6" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator advocated armed resistance, launched attacks, and/or organized violent protests in defense of group grievance?</data>
+    </item>
+    <item name="34-Grievance (2)" keyword="Political, Security" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator tried to retake territory that he believes belongs to him, his country or his constituency?</data>
+      <data text="Background2" id="Theater-Grievance-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator tried to create facts on the ground, by settlements, economic influence, payments to other groups, etc.?</data>
+      <data text="Background3" id="Theater-Grievance-3-D1" notapplicable="false" rating="0" confidence="0" comments="">Has the action taken created conflict?</data>
+    </item>
+    <item name="35-Grievance (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's group feel marginalized and powerless in the social and political structure of society?</data>
+      <data text="Background2" id="Theater-Grievance-2-C3" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's group looking for acquisition of territory, economic benefits, political  representation political autonomy?</data>
+      <data text="Background3" id="Theater-Grievance-3-D3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's group have access to arms and recruits and/or to economic resources?</data>
+    </item>
+    <item name="36-Grievance (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Grievance-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator's group been the victim of persecution, prejudice or atrocities?</data>
+      <data text="Background2" id="Theater-Grievance-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator's group, in its own view, been unable to get justice through legal, constitutional or economic means?</data>
+      <data text="Background3" id="Theater-Grievance-3-D2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's group feel a sense of grievance for past injustices that have not been redressed?</data>
+    </item>
+    <item name="37-Greed" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B12" notapplicable="false" rating="0" confidence="0" comments="">Does holding office open up hidden sources of the wealth for Terminator that are not controlled by the legislature, the courts, or seen by the media?</data>
+    </item>
+    <item name="38-Greed (1)" keyword="Political, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B13" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator making decisions that consistently favor one group of people over the other?</data>
+      <data text="Background2" id="Theater-Greed-2-C13" notapplicable="false" rating="0" confidence="0" comments="">Do the decisions threaten the ability of Terminator to provide for the general good of the people?</data>
+    </item>
+    <item name="39-Greed (2)" keyword="Political, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have aspirations to  acquire personal control over property or territory belonging to other individuals, corporations or states?</data>
+      <data text="Background2" id="Theater-Greed-2-C14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator defend these aspirations politically, as in populist or nationalist terms?</data>
+      <data text="Background3" id="Theater-Greed-3-D14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the legal, military or political power to fulfill his ambitions?</data>
+    </item>
+    <item name="40-Greed" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B15" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator calling for the state's seizure, occupation, or takeover of property or territory by existing authorities or newly formed vigilante groups?</data>
+    </item>
+    <item name="41-Greed (2)" keyword="Political, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence dependent upon his/her personal wealth?</data>
+      <data text="Background2" id="Theater-Greed-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have access to non-governmental sources of wealth?</data>
+      <data text="Background3" id="Theater-Greed-3-D10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the power to make decisions and/or  appointments that will permit him/her to acquire wealth without proper oversight or transparency?</data>
+    </item>
+    <item name="42-Greed (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="Theater-Greed-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator viewed by the public as a corrupt and wealthy official?</data>
+      <data text="Background2" id="Theater-Greed-2-C11" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator represent the business elites and not the ordinary constituents?</data>
+    </item>
+  </section>
+  <section name="DVD">
+    <item name="1-Political (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B17" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a military background or close ties to the military?</data>
+      <data text="Background2" id="DVD-Political-2-C17" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have an underlying military constituency?</data>
+      <data text="Background3" id="DVD-Political-3-D17" notapplicable="false" rating="0" confidence="0" comments="">Is this military constituency reliable? How strong is this military?</data>
+    </item>
+    <item name="2-Political (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have formal political authority?</data>
+      <data text="Background2" id="DVD-Political-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator wield this power absolutely?</data>
+      <data text="Background3" id="DVD-Political-3-D1" notapplicable="false" rating="0" confidence="0" comments="">Are there institutional checks and balances on  Terminator's political authority?</data>
+    </item>
+    <item name="3-Social (2)" keyword="Political, Religious" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator leader of a particular class of people?</data>
+      <data text="Background2" id="DVD-Social-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Is this a positive or negative identification?</data>
+      <data text="Background3" id="DVD-Social-3-D9" notapplicable="false" rating="0" confidence="0" comments="">If negative, is it because that higher class group is considered a dominant and repressive ruling group?</data>
+    </item>
+    <item name="4-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have good relations with influential elites in other branches of government?</data>
+      <data text="Background2" id="DVD-Political-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Is there an organized opposition?</data>
+    </item>
+    <item name="5-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B16" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator involved in illicit economic activities that are not controlled by the central government?</data>
+      <data text="Background2" id="DVD-Political-2-C16" notapplicable="false" rating="0" confidence="0" comments="">Has such corruption undermined the political legitimacy of Terminator?</data>
+    </item>
+    <item name="6-Social" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator a "natural" inheritor of influence and power?</data>
+    </item>
+    <item name="7-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator able to exceed his/her authority and influence constitutionally?</data>
+    </item>
+    <item name="8-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B15" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise control and influence in local enclaves?</data>
+    </item>
+    <item name="9-Social (1)" keyword="Political, Religious, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator identified with a political dynasty, privileged class, dominant clan or tribe, or aristocracy?</data>
+      <data text="Background2" id="DVD-Social-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator linked to a social group (ethnic, racial, religious, language) that obliges him/her to take certain positions on issues to advance the group interests?</data>
+    </item>
+    <item name="10-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the power to block laws passed by the legislature?</data>
+    </item>
+    <item name="11-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise control and influence throughout the country?</data>
+      <data text="Background2" id="DVD-Political-2-C14" notapplicable="false" rating="0" confidence="0" comments="">If not, does this have the potential to threaten central control?</data>
+    </item>
+    <item name="12-Social" keyword="Religious, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence been enhanced by his reputation (e.g., as an elder statesman) despite not holding office or leading a party or constituency?</data>
+    </item>
+    <item name="13-Physical (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control the police?</data>
+      <data text="Background2" id="DVD-Physical-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Do the police support Terminator?</data>
+      <data text="Background3" id="DVD-Physical-3-D2" notapplicable="false" rating="0" confidence="0" comments="">Are the police repressive?</data>
+    </item>
+    <item name="14-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the power to block decisions by the executive?</data>
+    </item>
+    <item name="15-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B13" notapplicable="false" rating="0" confidence="0" comments="">Are there term limits on the office of Terminator?</data>
+    </item>
+    <item name="16-Social" keyword="Political, Religious" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator use his/her powers of persuasion to advance national goals?</data>
+    </item>
+    <item name="17-Physical (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the means to physically enforce his power through the use of force?</data>
+      <data text="Background2" id="DVD-Physical-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Is this physical control recognized as legitimate?</data>
+      <data text="Background3" id="DVD-Physical-3-D1" notapplicable="false" rating="0" confidence="0" comments="">Is this physical control constitutional or within the bounds of the rule of law?</data>
+    </item>
+    <item name="18-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the power to appoint the members of the judiciary?</data>
+    </item>
+    <item name="19-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B12" notapplicable="false" rating="0" confidence="0" comments="">Is the system through which Terminator was elected regarded by the majority as free and fair?</data>
+    </item>
+    <item name="20-Social (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator likely to exercise influence and exert power based on persuasion and incentives?</data>
+      <data text="Background2" id="DVD-Social-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been successful in achieving his/her goals based on this style of governance?</data>
+    </item>
+    <item name="21-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the power to delegate influence to others, such as the security apparatus?</data>
+    </item>
+    <item name="22-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator democratically elected?</data>
+      <data text="Background2" id="DVD-Political-2-C11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence wielded through official office?</data>
+    </item>
+    <item name="23-Physical (2)" keyword="Political, Military, Religious" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have his/her own militia?</data>
+      <data text="Background2" id="DVD-Physical-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Are the militias loyal and support Terminator's agenda?</data>
+      <data text="Background3" id="DVD-Physical-3-D4" notapplicable="false" rating="0" confidence="0" comments="">Are the militias capable of being lured into the orbit of other influencials?</data>
+    </item>
+    <item name="24-Social" keyword="Political, Religious, Security, Intelligence" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a reputation for brutality?</data>
+    </item>
+    <item name="25-Physical (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control the military?</data>
+      <data text="Background2" id="DVD-Physical-2-C3" notapplicable="false" rating="0" confidence="0" comments="">Does the military support Terminator?</data>
+      <data text="Background3" id="DVD-Physical-3-D3" notapplicable="false" rating="0" confidence="0" comments="">Is the military repressive?</data>
+    </item>
+    <item name="26-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator viewed by the majority of the people as acting in the country's best interest?</data>
+      <data text="Background2" id="DVD-Political-2-C8" notapplicable="false" rating="0" confidence="0" comments="">Are there substantial or powerful minorities who feel marginalized by Terminator?</data>
+    </item>
+    <item name="27-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been prosecuted for a crime?</data>
+      <data text="Background2" id="DVD-Political-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been convicted of a crime?</data>
+    </item>
+    <item name="28-Social (2)" keyword="Political, Religious, Security, Intelligence" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's reputation based on fear?</data>
+      <data text="Background2" id="DVD-Social-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator likely exercise influence and exert power based on threats or intimidation?</data>
+      <data text="Background3" id="DVD-Social-3-D2" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator inflicted physical, financial or personal harm on his opponents to advance his/her own ends?</data>
+    </item>
+    <item name="29-Resources" keyword="Economic" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B12" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have financial control of the media?</data>
+    </item>
+    <item name="30-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator corrupt or widely perceived to be corrupt?</data>
+    </item>
+    <item name="31-Social (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a favorable or unfavorable personal reputation?</data>
+      <data text="Background2" id="DVD-Social-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Is that reputation of the kind that can influence large numbers of people on political or economic issues?</data>
+    </item>
+    <item name="32-Resources (2)" keyword="Political, Religious, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B13" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the ability to mobilize large numbers of people in support of particular policies or issues?</data>
+      <data text="Background2" id="DVD-Resources-2-C13" notapplicable="false" rating="0" confidence="0" comments="">Would the constituency follow Terminator's call for social or political action?</data>
+      <data text="Background3" id="DVD-Resources-3-D13" notapplicable="false" rating="0" confidence="0" comments="">Would the constituency follow Terminator's call for use of violence to advance a cause?</data>
+    </item>
+    <item name="33-Resources (2)" keyword="Political, Religious, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exert undue influence over the media?</data>
+      <data text="Background2" id="DVD-Resources-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exert control over the media in other ways that may compromise its independence?</data>
+      <data text="Background3" id="DVD-Resources-3-D10" notapplicable="false" rating="0" confidence="0" comments="">Is the media free to criticize Terminator without retribution or harassment?</data>
+    </item>
+    <item name="34-Resources (2)" keyword="Political, Religious, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator own any media?</data>
+      <data text="Background2" id="DVD-Resources-2-C11" notapplicable="false" rating="0" confidence="0" comments="">Is the media ownership transparent?</data>
+      <data text="Background3" id="DVD-Resources-3-D11" notapplicable="false" rating="0" confidence="0" comments="">Does an opposition media exist?</data>
+    </item>
+    <item name="35-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B19" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator, in his/her official capacity, exercise a monopoly on the use of force throughout the country?</data>
+      <data text="Background2" id="DVD-Political-2-C19" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise control of the use of force within his/her own area, such as a "no-go zone," an autonomous province, or a rebel enclave?</data>
+    </item>
+    <item name="36-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B18" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have military command of active armed forces?</data>
+    </item>
+    <item name="37-Affinity (2)" keyword="Political, Religious, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's lifestyle a matter of controversy (e.g., is Terminator accused of being too lavish, too western in dress or food preferences, not traditional in marriage choices, womanizer, too imperial, etc)?</data>
+      <data text="Background2" id="DVD-Affinity-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's lifestyle facilitate positive regard? (includes class, religion, family, etc.)</data>
+      <data text="Background3" id="DVD-Affinity-3-D10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's lifestyle generate respect and admiration among his constituency?</data>
+    </item>
+    <item name="38-Affinity (2)" keyword="Religious, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a strong professional affiliation (lawyer, cleric, businessman, celebrity, economist)?</data>
+      <data text="Background2" id="DVD-Affinity-2-C11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's professional standing respected?</data>
+      <data text="Background3" id="DVD-Affinity-3-D11" notapplicable="false" rating="0" confidence="0" comments="">Does that profession allow Terminator to exercise political influence?</data>
+    </item>
+    <item name="39-Physical (2)" keyword="Political, Security, Intelligence" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control intelligence organizations?</data>
+      <data text="Background2" id="DVD-Physical-2-C5" notapplicable="false" rating="0" confidence="0" comments="">Do intelligence organizations implement population control measures?</data>
+      <data text="Background3" id="DVD-Physical-3-D5" notapplicable="false" rating="0" confidence="0" comments="">Are intelligence organizations repressive?</data>
+    </item>
+    <item name="40-Physical (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control illicit activities, such as gangs?</data>
+      <data text="Background2" id="DVD-Physical-2-C6" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator personally involved in illicit activities?</data>
+      <data text="Background3" id="DVD-Physical-3-D6" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator likely to be indicted for his illicit activities?</data>
+    </item>
+    <item name="41-Physical (1)" keyword="Political, Security, Intelligence" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator dominate by means of physical intimidation, such as arrest?</data>
+      <data text="Background2" id="DVD-Physical-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator utilize demagoguery to generate populist support?</data>
+    </item>
+    <item name="42-Physical (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Physical-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise dominance by popular support of the majority ?</data>
+      <data text="Background2" id="DVD-Physical-2-C8" notapplicable="false" rating="0" confidence="0" comments="">Does the population support Terminator because of the service and protection he provides to his people?</data>
+    </item>
+    <item name="43-Affinity (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator a member of a dominant ethnic group?</data>
+      <data text="Background2" id="DVD-Affinity-2-C4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator use ethnicity as a political device to exercise influence and mobilize support?</data>
+      <data text="Background3" id="DVD-Affinity-3-D4" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator use ethnicity to promote hatred and retribution of other groups?</data>
+    </item>
+    <item name="44-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B22" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control "no-go zones" or autonomous pockets of influence in selected areas of the country?</data>
+    </item>
+    <item name="45-Affinity (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does the ethnicity of Terminator foster distrust of other ethnic groups?</data>
+      <data text="Background2" id="DVD-Affinity-2-C5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator marginalize other ethnic groups ?</data>
+    </item>
+    <item name="46-Political (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B21" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a role in protecting the territorial integrity of the country against outsiders?</data>
+      <data text="Background2" id="DVD-Political-2-C21" notapplicable="false" rating="0" confidence="0" comments="">Does he exercise that influence well?</data>
+    </item>
+    <item name="47-Affinity" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator believe violence must be used to get equal representation?</data>
+    </item>
+    <item name="48-Political" keyword="Political" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B24" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator support the ideology or religious affiliation of non-state constituencies or groups?</data>
+    </item>
+    <item name="49-Affinity" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise influence across borders?</data>
+    </item>
+    <item name="50-Political (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B23" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator support a state-sponsored national ideology or religion?</data>
+      <data text="Background2" id="DVD-Political-2-C23" notapplicable="false" rating="0" confidence="0" comments="">Is repression or force used to impose the ideology or religion on the people?</data>
+      <data text="Background3" id="DVD-Political-3-D23" notapplicable="false" rating="0" confidence="0" comments="">Is there an opposing ideology rooted in local constituencies that generates support among the people?</data>
+    </item>
+    <item name="51-Affinity (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator identified with a particular ethnic group?</data>
+      <data text="Background2" id="DVD-Affinity-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Does this group have deep-seated grievances that it feels are not being addressed?</data>
+      <data text="Background3" id="DVD-Affinity-3-D1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator feel the need to mobilize for effective political action to redress those grievances?</data>
+    </item>
+    <item name="52-Moral (1)" keyword="Political, Religious, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator highly regarded because of his/her status ideologically or religiously in society?</data>
+      <data text="Background2" id="DVD-Moral-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator feel morally bound by this creed (e.g., destined to be a martyr, spearhead of the revolution, the supreme leaders, etc.)?</data>
+    </item>
+    <item name="53-Moral" keyword="Political, Religious, Security, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator carry a popular name acknowledging personal popularity or influence?</data>
+    </item>
+    <item name="54-Moral" keyword="Political, Religious,  Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator sacrificed self for the good of the people or the nation?</data>
+    </item>
+    <item name="55-Moral" keyword="Political, Religious, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator highly regarded because of his/her personal stature (as opposed to ideological appeal, ethnic or religious ties, etc.) ?</data>
+    </item>
+    <item name="56-Moral (1)" keyword="Political, Religious, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator highly regarded in society?</data>
+      <data text="Background2" id="DVD-Moral-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator conduct affairs with a internalized sense of personal integrity?</data>
+    </item>
+    <item name="57-Affinity (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator share a common language with his/her constituents?</data>
+      <data text="Background2" id="DVD-Affinity-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator communicate at home in more than one language?</data>
+      <data text="Background3" id="DVD-Affinity-3-D9" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator regarded as too western due to his/her educational background and/or linguistic preferences (e.g., speaks English, cannot speak a native tongue, seems culturally aloof from his people, too intellectual)?</data>
+    </item>
+    <item name="58-Moral (1)" keyword="Political, Religious,  Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator acted in a way that society regards as admirable?</data>
+      <data text="Background2" id="DVD-Moral-2-C6" notapplicable="false" rating="0" confidence="0" comments="">In your opinion, is that behavior a veneer, just to earn constituency support, or a genuine reflection of extraordinary personal character?</data>
+    </item>
+    <item name="59-Affinity (2)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's  religious affiliation provide a way of acquiring or expanding power?</data>
+      <data text="Background2" id="DVD-Affinity-2-C8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator's influence depend upon religion?</data>
+      <data text="Background3" id="DVD-Affinity-3-D8" notapplicable="false" rating="0" confidence="0" comments="">Does the religion give Terminator "license" to exert influence?</data>
+    </item>
+    <item name="60-Moral" keyword="Political, Religious, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator highly regarded for vision and commitment?</data>
+    </item>
+    <item name="61-Affinity (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Is there hostility between Terminator and the United States based on affinity?</data>
+      <data text="Background2" id="DVD-Affinity-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator dogmatic in that hostility and unwilling to seek engagement?</data>
+    </item>
+    <item name="62-Moral" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator highly regarded for intellect?</data>
+    </item>
+    <item name="63-Affinity" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Affinity-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Is there a history of hostility between Terminator and other ethnic groups?</data>
+    </item>
+    <item name="64-Political (2)" keyword="Political" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Political-1-B20" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator, in his/her official capacity, exercise physical control of the state throughout the country?</data>
+      <data text="Background2" id="DVD-Political-2-C20" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's territorial authority challenged by other entities for territorial control?</data>
+      <data text="Background3" id="DVD-Political-3-D20" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise territorial influence well?</data>
+    </item>
+    <item name="65-Moral" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator regarded as a person of conviction who will stand up for principles, even it is unpopular?</data>
+    </item>
+    <item name="66-Resources (2)" keyword="Political, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B8" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise direct control over significant natural resources, such as diamonds, oil, gas, land and other minerals or natural resources?</data>
+      <data text="Background2" id="DVD-Resources-2-C8" notapplicable="false" rating="0" confidence="0" comments="">Are they used for patronage and cooptation?</data>
+      <data text="Background3" id="DVD-Resources-3-D8" notapplicable="false" rating="0" confidence="0" comments="">Are the resources channeled into illicit activities?</data>
+    </item>
+    <item name="67-Resources (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B7" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have control over government contracts?</data>
+      <data text="Background2" id="DVD-Resources-2-C7" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been charged with taking kick-backs or bribes in granting contracts?</data>
+    </item>
+    <item name="68-Resources (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B6" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's control of government assets, legal and transparent?</data>
+      <data text="Background2" id="DVD-Resources-2-C6" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator been charged with criminal offences with regard to the management of natural resources or national assets?</data>
+    </item>
+    <item name="69-Resources (2)" keyword="Political, Religious, Economic" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control government economic assets, such as land, revenue, minerals, etc.?</data>
+      <data text="Background2" id="DVD-Resources-2-C5" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have direct control over government assets? (e.g., can he/she order a land confiscation, oppressive taxation)?</data>
+      <data text="Background3" id="DVD-Resources-3-D5" notapplicable="false" rating="0" confidence="0" comments="">Can Terminator withdraw revenue from the treasury at will?</data>
+    </item>
+    <item name="70-Resources (1)" keyword="Political, Religious, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B4" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's control of the private sector considered threatening by other stakeholders?</data>
+      <data text="Background2" id="DVD-Resources-2-C4" notapplicable="false" rating="0" confidence="0" comments="">If so, are the rival economic forces likely to fight for control of these resources?</data>
+    </item>
+    <item name="71-Resources (1)" keyword="Political, Religious, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B3" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have the ability to exert extraordinary control of the private sector single-handedly?</data>
+      <data text="Background2" id="DVD-Resources-2-C3" notapplicable="false" rating="0" confidence="0" comments="">Does the quest for control of the private sector drive Terminator's decisions and policies?</data>
+    </item>
+    <item name="72-Resources (1)" keyword="Political, Religious, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B2" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence over economic resources legal or illegal?</data>
+      <data text="Background2" id="DVD-Resources-2-C2" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator use his/her position (in government or an organization) to acquire financial resources personally?</data>
+    </item>
+    <item name="73-Resources (1)" keyword="Political, Religious, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B1" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator control economic resources?</data>
+      <data text="Background2" id="DVD-Resources-2-C1" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence over economic resources formal (i.e., through position in government or an organization)?</data>
+    </item>
+    <item name="74-Moral" keyword="Political, Religious, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator seen as a political "spoiler," an outsider with influence?</data>
+    </item>
+    <item name="75-Moral (1)" keyword="Political" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator seen as a political "insider"?</data>
+      <data text="Background2" id="DVD-Moral-2-C10" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exert influence by virtue of the fact of being a leader of that group?</data>
+    </item>
+    <item name="76-Moral (1)" keyword="Political, Religious, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B16" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have a leadership vision that inspires his/her constituencies?</data>
+      <data text="Background2" id="DVD-Moral-2-C16" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator an inspirational leader?</data>
+    </item>
+    <item name="77-Moral (1)" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B12" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator considered to have natural  leadership qualities?</data>
+      <data text="Background2" id="DVD-Moral-2-C12" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator seen as a leader because of having moral character?</data>
+    </item>
+    <item name="78-Moral (1)" keyword="Political, Religious" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B13" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator's influence based upon his/her religious stature?</data>
+      <data text="Background2" id="DVD-Moral-2-C13" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have religious opponents who challenge his leadership credentials on religious grounds?</data>
+    </item>
+    <item name="79-Moral (1)" keyword="Political, Religious" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator exercise influence by advocating a radical interpretation of the religion?</data>
+      <data text="Background2" id="DVD-Moral-2-C14" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator personify his/her people's story?</data>
+    </item>
+    <item name="80-Moral (2)" keyword="Political, Religious, Economic, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Moral-1-B15" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator have charisma?</data>
+      <data text="Background2" id="DVD-Moral-2-C15" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator eloquent and have good communication skills?</data>
+      <data text="Background3" id="DVD-Moral-3-D15" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator "connect" with the people?</data>
+    </item>
+    <item name="81-Resources (1)" keyword="Political, Economic" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Resources-1-B9" notapplicable="false" rating="0" confidence="0" comments="">Are there other economically valuable resources at Terminator's disposal, such as jobs or prestigious appointments?</data>
+      <data text="Background2" id="DVD-Resources-2-C9" notapplicable="false" rating="0" confidence="0" comments="">Has Terminator demonstrated a willingness to tap these resources for personal advantage?</data>
+    </item>
+    <item name="82-Social (1)" keyword="Political, Religious, Social" details="2">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B13" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator a leader of a local community?</data>
+      <data text="Background2" id="DVD-Social-2-C13" notapplicable="false" rating="0" confidence="0" comments="">Is he/she the leader of a virtual community (e.g., Muslims, diasporas; refugees; and identity-based groups whose members do not meet face to face but share a common cause, such as the anti-globalization movement)?</data>
+    </item>
+    <item name="83-Social" keyword="Religious, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B12" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator a leader of a new generation of group activists?</data>
+    </item>
+    <item name="84-Social (2)" keyword="Political, Religious, Social" details="3">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B15" notapplicable="false" rating="0" confidence="0" comments="">Does Terminator assume a historical destiny to achieve something great for their people?</data>
+      <data text="Background2" id="DVD-Social-2-C15" notapplicable="false" rating="0" confidence="0" comments="">Does that sense of historical destiny involve the use of violence?</data>
+      <data text="Background3" id="DVD-Social-3-D15" notapplicable="false" rating="0" confidence="0" comments="">Does that sense of destiny involve peaceful political mobilization to fulfill Terminator's mission?</data>
+    </item>
+    <item name="85-Social" keyword="Political, Religious, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B14" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator a leader of a historical movement?</data>
+    </item>
+    <item name="86-Social" keyword="Political, Religious, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B11" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator considered a leader of a generation?</data>
+    </item>
+    <item name="87-Social" keyword="Political, Religious, Security, Intelligence, Economic, Social" details="1">
+      <data text="Terminator" />
+      <data text="Background1" id="DVD-Social-1-B10" notapplicable="false" rating="0" confidence="0" comments="">Is Terminator more highly educated than the majority of the population?</data>
+    </item>
+  </section>
+</content>

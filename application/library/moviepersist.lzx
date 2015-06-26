@@ -1,0 +1,21 @@
+<library>
+	<dataset name="ds" src="/question" type="http" request="false"  
+             querytype="POST"/>
+
+	<method name="handleData" args="chkbx, rating, confidence, comments, index, identifier">
+		Debug.write(":handleData id '" + index + "' identifier '" + identifier + "'");
+
+  		<![CDATA[ 
+		var body = '<rawpostbodycontents>Hello, this is some XML.</rawpostbodycontents>'; 
+		ds.setQueryParam("lzpostbody", body); 
+		ds.doRequest(); 
+		]]>  
+  
+		Debug.write(":handleData done");
+
+	</method>
+
+	<handler name="ondata" reference="ds">  
+		Debug.write("RESPONSE:", ds.serialize());  
+	</handler>
+</library>

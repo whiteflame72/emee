@@ -1,0 +1,232 @@
+<library>
+	<class name="emaptabslider">
+<!--
+			<handler name="onvalue" reference="rating1" args="s">
+				Debug.write(s, "&lt;=========== 1 rating");
+			</handler>		
+			<handler name="onvalue" reference="rating2" args="s">
+				Debug.write(s, "&lt;=========== 2 rating");
+			</handler>		
+			<handler name="onvalue" reference="rating3" args="s">
+				Debug.write(s, "&lt;=========== 3 rating");
+			</handler>
+			<handler name="onvalue" reference="confidence1" args="s">
+				Debug.write(s, "&lt;=========== 1 confidence");
+			</handler>		
+			<handler name="onvalue" reference="confidence2" args="s">
+				Debug.write(s, "&lt;=========== 2 confidence");
+			</handler>		
+			<handler name="onvalue" reference="confidence3" args="s">
+				Debug.write(s, "&lt;=========== 3 confidence");
+			</handler>
+			<handler name="onload" reference="te1next" args="s">
+				Debug.write(s, "&lt;=========== button te1next");
+			</handler>
+			<handler name="onvalue" reference="te1chkbx" args="s">
+				Debug.write(s, "&lt;=========== 1 te1chkbx");
+			</handler>		
+			<handler name="onvalue" reference="te2chkbx" args="s">
+				Debug.write(s, "&lt;=========== 2 te2chkbx");
+			</handler>		
+			<handler name="onvalue" reference="te3chkbx" args="s">
+				Debug.write(s, "&lt;=========== 3 te3chkbx");
+			</handler>
+			<handler name="onvalue" reference="rating1" args="s">
+				Debug.write(s, "&lt;=========== rating1");
+			</handler>		
+			<handler name="onvalue" reference="confidence1" args="s">
+				Debug.write(s, "&lt;=========== confidence1");
+			</handler>		
+			<handler name="onvalue" reference="comments1" args="s">
+				Debug.write(s, "&lt;=========== comments1");
+			</handler>		
+-->
+			<tabslider id="t" width="250" height="${canvas.height}" inset_left="20"
+				inset_top="20">
+				<tabelement id="te1" text="Level 1" layout="spacing:8" datapath="new:/answer/question">
+					<handler name="onselect">
+						//Debug.write("b4 onselect 1 selectedItem = '" + sectionListener.selectedItem + "' 1");
+						canvas.updateTabsliderData(te1chkbx, rating1, confidence1, comments1, sectionListener.selectedItem, 1);
+						//Debug.write("aft onselect 1");
+					</handler>
+					<checkbox id="te1chkbx" onclick="canvas.updateTabsliderData(te1chkbx, rating1, confidence1, comments1, sectionListener.selectedItem, 1);canvas.handleNavigationButton(te1chkbx, 1)" value="false">
+						Not Applicable
+					</checkbox>
+					<text id="te1text" multiline="true" width="200">
+						Blank
+					</text>
+					<attribute name="defaultbuttongroup" value="true" />
+					<text>
+						Rating
+					</text>
+					<combobox id="rating1" width="150" editable="false">
+						<textlistitem id="rating1tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="rating1tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="rating1tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="rating1tli4" text="60% - Likely" value="60" />
+						<textlistitem id="rating1tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="rating1tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("rating1 b4 onselect selectedItem = '" + sectionListener.selectedItem + "' combobox value '" + rating1.value + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating1, confidence1, 1);
+							//Debug.write("rating1 aft onselect");
+							//canvas.handleRatingFieldSelect(this, rating1.value);
+						</handler>
+					</combobox>
+					<text>
+						Confidence
+					</text>
+					<combobox id="confidence1" width="150" editable="false">
+						<textlistitem id="confidence1tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="confidence1tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="confidence1tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="confidence1tli4" text="60% - Likely" value="60" />
+						<textlistitem id="confidence1tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="confidence1tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("b4 onselect selectedItem = '" + sectionListener.selectedItem + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating1, confidence1, 1);
+							//Debug.write("aft onselect");
+						</handler>
+					</combobox>
+					<view>
+						<text text="Comments:" />
+						<edittext id="comments1" text="Please enter your comments here."
+							width="200" height="50" multiline="true">
+							<handler name="onblur">
+								canvas.updateTabsliderData(te1chkbx, rating1, confidence1, comments1, sectionListener.selectedItem, 1);
+							</handler>
+						</edittext>
+						<simplelayout spacing="2" />
+					</view>
+					
+					<button id="te1next" isdefault="true" 
+						onclick="parent.parent.selectNext()">
+								<![CDATA[>>]]></button>
+				</tabelement>
+				<tabelement id="te2" text="Level 2" layout="spacing:8" visible="false">
+					<handler name="onselect">
+						//Debug.write("b4 onselect 2 selectedItem = '" + sectionListener.selectedItem + "' 2");
+						canvas.updateTabsliderData(te2chkbx, rating2, confidence2, comments2, sectionListener.selectedItem, 2);
+						//Debug.write("aft onselect 2");
+					</handler>
+					<checkbox id="te2chkbx" onclick="canvas.updateTabsliderData(te2chkbx, rating2, confidence2, comments2, sectionListener.selectedItem, 2);canvas.handleNavigationButton(te2chkbx, 2)" value="false">
+						Not Applicable
+					</checkbox>
+					<text id="te2text" multiline="true" width="200">
+						Blank
+					</text>
+					<attribute name="defaultbuttongroup" value="true" />
+					<text>
+						Rating
+					</text>
+					<combobox id="rating2" width="150" editable="false">
+						<textlistitem id="rating2tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="rating2tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="rating2tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="rating2tli4" text="60% - Likely" value="60" />
+						<textlistitem id="rating2tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="rating2tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("b4 onselect selectedItem = '" + sectionListener.selectedItem + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating2, confidence2, 2);
+							//Debug.write("aft onselect");
+						</handler>
+					</combobox>
+					<text>
+						Confidence
+					</text>
+					<combobox id="confidence2" width="150" editable="false">
+						<textlistitem id="confidence2tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="confidence2tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="confidence2tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="confidence2tli4" text="60% - Likely" value="60" />
+						<textlistitem id="confidence2tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="confidence2tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("b4 onselect selectedItem = '" + sectionListener.selectedItem + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating2, confidence2, 2);
+							//Debug.write("aft onselect");
+						</handler>
+					</combobox>
+					<view>
+						<text text="Comments:" />
+						<edittext id="comments2" text="Please enter your comments here."
+							width="200" height="50" multiline="true">
+							<handler name="onblur">
+								canvas.updateTabsliderData(te2chkbx, rating2, confidence2, comments2, sectionListener.selectedItem, 2);
+							</handler>
+						</edittext>
+						<simplelayout spacing="2" />
+					</view>
+					
+					<button id="te2back" isdefault="true"
+						onclick="parent.parent.selectPrev()">
+								<![CDATA[<<]]></button>
+					<button id="te2next" isdefault="true"
+						onclick="parent.parent.selectNext()">
+								<![CDATA[>>]]></button>
+				</tabelement>
+				<tabelement id="te3" text="Level 3" layout="spacing:8" visible="false">
+					<handler name="onselect">
+						//Debug.write("b4 onselect 3 selectedItem = '" + sectionListener.selectedItem + "' 3");
+						canvas.updateTabsliderData(te3chkbx, rating3, confidence3, comments3, sectionListener.selectedItem, 3);
+						//Debug.write("aft onselect 3");
+					</handler>
+					<checkbox id="te3chkbx" onclick="canvas.updateTabsliderData(te3chkbx, rating3, confidence3, comments3, sectionListener.selectedItem, 3);canvas.handleNavigationButton(te3chkbx, 3)" value="false">
+						Not Applicable
+					</checkbox>
+					<text id="te3text" multiline="true" width="200">
+						Blank
+					</text>
+					<attribute name="defaultbuttongroup" value="true" />
+					<text>
+						Rating
+					</text>
+					<combobox id="rating3" width="150" editable="false">
+						<textlistitem id="rating3tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="rating3tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="rating3tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="rating3tli4" text="60% - Likely" value="60" />
+						<textlistitem id="rating3tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="rating3tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("b4 onselect selectedItem = '" + sectionListener.selectedItem + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating3, confidence3, 3);
+							//Debug.write("aft onselect");
+						</handler>
+					</combobox>
+					<text>
+						Confidence
+					</text>
+					<combobox id="confidence3" width="150" editable="false">
+						<textlistitem id="confidence3tli1" text="0% - Not At All" value="0" />
+						<textlistitem id="confidence3tli2" text="20% - Not Likely" value="20" />
+						<textlistitem id="confidence3tli3" text="40% - Possibly" value="40" />
+						<textlistitem id="confidence3tli4" text="60% - Likely" value="60" />
+						<textlistitem id="confidence3tli5" text="80% - Very Likely" value="80" />
+						<textlistitem id="confidence3tli6" text="100% - Absolutely" value="100" />
+						<handler name="onselect" args="s">
+							//Debug.write("b4 onselect selectedItem = '" + sectionListener.selectedItem + "'");
+							canvas.updateComboboxListData(sectionListener.selectedItem, rating3, confidence3, 3);
+							//Debug.write("aft onselect");
+						</handler>
+					</combobox>
+					<view>
+						<text text="Comments:" />
+						<edittext id="comments3" text="Please enter your comments here."
+							width="200" height="50" multiline="true">
+							<handler name="onblur">
+								canvas.updateTabsliderData(te3chkbx, rating3, confidence3, comments3, sectionListener.selectedItem, 3);
+							</handler>
+						</edittext>
+						<simplelayout spacing="2" />
+					</view>
+					
+					<button id="te3back" isdefault="true"
+						onclick="parent.parent.selectPrev()">
+								<![CDATA[<<]]></button>
+				</tabelement>
+			</tabslider>
+	</class>
+</library>

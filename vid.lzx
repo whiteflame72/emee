@@ -1,0 +1,16 @@
+<canvas>
+	<include href="application/library/agent.lzx"/>
+	<button id="button1" text="Create Agent" width="25%" onclick="new lz.agent()"/>
+	<slider id="videodim" x="${button1.y+button1.width+20}" y="${button1.y}" width="25%" value="50"/>
+	<view>
+		<videoplayer id="video1" y="${button1.y+button1.height+10}" url="http://www.archive.org/download//JudgeMediaTestVideoFile_0/video.flv"
+		type="http" autoplay="false" width="${videodim.value*1.78*10}" height="${videodim.value*10}">
+		</videoplayer>
+		
+		<view id="view1" bgcolor="blue" y="${video1.y}" width="${video1.width}" height="${video1.height}" opacity="0.5" onmousedown="draggerParent.setAttribute('applied', true)" onmouseup="draggerParent.setAttribute('applied', false)">
+		    <dragstate name="draggerParent" drag_axis="x"/>
+		</view>
+	
+	</view>
+
+</canvas>

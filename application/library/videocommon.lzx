@@ -1,0 +1,62 @@
+<!-- * X_LZ_COPYRIGHT_BEGIN ***************************************************
+* Copyright 2001-2008 Laszlo Systems, Inc.  All Rights Reserved.              *
+* Use is subject to license terms.                                            *
+* X_LZ_COPYRIGHT_END ****************************************************** -->
+<class name="fullscreentoggle" extends="node">
+
+    <attribute name="displaystate" type="string" value="normal"/>
+
+    <method name="init">
+     <![CDATA[
+     if ($swf8) {
+        Stage.scaleMode="noScale";
+        Stage.align = "TL";
+     } if ($dhtml) {
+        Debug.error("DHTML doesn't support fullscreen display mode! Only available for SWF8/9/10");
+     }
+     ]]>
+    </method>
+
+    <switch>
+	    <when runtime="swf9">
+	        <passthrough>
+                 import flash.display.Stage;
+	             import flash.display.StageDisplayState;
+	        </passthrough>
+
+	        <method name="toggleFullScreen">
+	          <![CDATA[
+	          #passthrough  {
+                var stage:Stage = canvas.sprite.stage;
+	            if (stage.displayState == StageDisplayState.NORMAL) {
+                    try {
+                        stage.displayState=StageDisplayState.FULL_SCREEN;
+                    } catch (error:SecurityError) {
+                        Debug.error(error.message);
+                        Debug.error('Check your SWF embed code for missing param tag ' +
+                                    '<param name="allowFullScreen" value="true" /> inside the <object> tag or n' +
+                                    'missing attribute allowFullScreen="true" in <embed> tag');
+                    }
+                } else {
+	                stage.displayState=StageDisplayState.NORMAL;
+	            }
+                this.setAttribute("displaystate", stage.displayState);
+	         }#
+	         ]]>
+	        </method>
+	    </when>
+	    <when runtime="swf8">
+            <method name="toggleFullScreen">
+              <![CDATA[
+                  if(Stage["displayState"]=="normal"){
+                    Stage["displayState"]="fullScreen";
+                  }else{
+                    Stage["displayState"]="normal";
+                  }
+                  this.setAttribute("displaystate", Stage["displayState"]);
+             ]]>
+            </method>
+	    </when>
+    </switch>
+
+</class>

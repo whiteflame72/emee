@@ -1,0 +1,8 @@
+<library>
+<!--
+	<include href="../application/library/media.lzx"/>
+	<include href="../application/library/acmeapp.lzx"/>
+-->	
+	<include href="../application/library/movieapp.lzx"/>
+	
+</library>

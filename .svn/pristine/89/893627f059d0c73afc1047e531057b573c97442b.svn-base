@@ -1,0 +1,11 @@
+<section name="Navigator" text="">
+	<item name="video" text="VIDEO - 5 Available">
+		<subject logo="application/images/hollywood_logo.jpg">Movie</subject>
+		<subject logo="application/images/hollywood_logo.jpg">Genre</subject>
+		<subject logo="application/images/hollywood_logo.jpg">Country</subject>
+	</item>
+	<item name="audio" text="AUDIO - 1678 Available">
+		<subject logo="application/images/MP3-LOGO-3.jpg">MP3</subject>
+		<subject logo="application/images/windowsmedia.gif">WMA</subject>
+	</item>
+</section>

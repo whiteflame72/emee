@@ -1,0 +1,97 @@
+<library>
+	<include href="movietabslider.lzx"/>
+	<include href="moviecommon.lzx"/>
+	<include href="moviepersist.lzx"/>
+
+	<ipc name="sectionListener">
+		<!-- application specific property -->
+        <attribute name="childCount" type="number"/>
+		<!-- listen to attribute change event-->
+		<handler name="onsectionName">
+			//Debug.write("changed value sectionName='" + sectionName + "' selectedItem='" +selectedItem + "' " + +logo + " " + +summaryVal + " " + +detailedVal);
+			//Debug.write("summaryTabName='" + summaryTabName + "' detailedTabName='" + detailedTabName + "'");
+		</handler>
+		<handler name="ondetailedVal">
+			childCount=0;
+
+			//Debug.write("detailedVal='" + detailedVal + "'");
+			detailedTab.setAttribute("text", "");
+			te1text.setAttribute("text", detailedVal);
+			t.selectItemAt(0);
+			
+			var detailedVal2 = dp30.xpathQuery("ds30:/content/section[@name='"
+					+ sectionName + "']/item[@name='" + selectedItem
+					+ "']/*[@text='Background2']/text()");
+			//Debug.write("detailedVal2='" + detailedVal2 + "'");
+			if (detailedVal2 != null) {
+				childCount++;
+				te2text.setAttribute("text", detailedVal2);
+				te2.setAttribute("visible", true);
+//				te1next.setAttribute("visible", true);
+				if(te1.selected &amp;&amp; !te1chkbx.value)
+					te1nextguide.setAttribute("visible", true);
+			} else {
+				te2.setAttribute("visible", false);
+//				te1next.setAttribute("visible", false);
+				te1nextguide.setAttribute("visible", false);
+			}
+			var detailedVal3 = dp30.xpathQuery("ds30:/content/section[@name='"
+					+ sectionName + "']/item[@name='" + selectedItem
+					+ "']/*[@text='Background3']/text()");
+			//Debug.write("detailedVal3='" + detailedVal3 + "'");
+			if (detailedVal3 != null) {
+				childCount++;
+				te3text.setAttribute("text", detailedVal3);
+				te3.setAttribute("visible", true);
+				te2next.setAttribute("visible", true);
+			} else {
+				te3.setAttribute("visible", false);
+				te2next.setAttribute("visible", false);
+			}
+			
+			//Debug.write("childCount='" + childCount + "'");
+			
+			canvas.updateTabsliderData(te1chkbx, rating1, confidence1, comments1, selectedItem, 1);	//since onblur event is not fired during init
+			canvas.handleComboboxListSelect(selectedItem, 1);
+			canvas.handleNavigationButton(te1chkbx, 1);
+
+			canvas.updateTabsliderData(te2chkbx, rating2, confidence2, comments2, selectedItem, 2);
+			canvas.handleComboboxListSelect(selectedItem, 2);
+
+			canvas.updateTabsliderData(te3chkbx, rating3, confidence3, comments3, selectedItem, 3);
+			canvas.handleComboboxListSelect(selectedItem, 3);
+		</handler>
+	</ipc>
+
+	<class name="external">
+		<method name="handleNextButton" args="value">
+			if(value != null) {
+				return true;
+			}
+		</method>
+		<handler name="oninit">
+		<![CDATA[
+			//Debug.write('about to hit ...');
+			//ds10.setAttribute("src", "http://localhost:8081/service-web/movieQuestionSectionLZX.jsp");
+			ds10.setAttribute("src", "application/xml/section.xml");
+			ds10.doRequest();
+			//ds30.setAttribute("src", "http://localhost:8081/service-web/movieQuestionContentLZX.jsp");
+			ds30.setAttribute("src", "application/xml/content.xml");
+			ds30.doRequest();
+			//disable the default logo animation
+			//secondary.unregister(lz.GlobalMouse, "onmouseover");
+			//secondary.unregister(lz.GlobalMouse, "onmouseout");
+			topicSubjectView.setAttribute("visible", false);
+			
+		]]>
+		</handler>
+		<view y="${this.parent.parent.y+10}" x="${this.parent.parent.x-10}">
+			<movietabslider/>
+
+			<text multiline="true" visible="false" id="te1nextguide" x="${t.x + t.width + 5}" y="${te1next.y + te1next.height}"><![CDATA[>> button to proceed to the next level of question, << to go back the previous level of question]]></text>
+		</view>
+		
+		<simplelayout axis="x" spacing="40" />
+	</class>
+
+</library>

@@ -1,0 +1,267 @@
+<library>
+	<method name="handleNavigationButton" args="checkbox, buttonIndex">
+		//Debug.write(":handleNavigationButton checkbox.value '" + checkbox.value + "'");
+		//Debug.write(":handleNavigationButton buttonIndex '" + buttonIndex + "' sectionListener.childCount " + sectionListener.childCount);
+		/* button index dictates the child it has */
+		switch(sectionListener.childCount) {
+			case 2:
+				if(buttonIndex == 2) {
+					if(checkbox.value) {
+						te2next.setAttribute("enabled", false);
+						te2next.setAttribute("visible", false);
+						//Debug.write("next button 2 not visible buttonIndex " + buttonIndex);
+					} else {
+						te2next.setAttribute("enabled", true);
+						te2next.setAttribute("visible", true);
+						//Debug.write("next button 2 visible buttonIndex " + buttonIndex);
+					}
+				}
+			case 1:	
+				if(buttonIndex == 1) {
+					if(checkbox.value) {
+						te1next.setAttribute("enabled", false);
+						te1next.setAttribute("visible", false);
+						//Debug.write("next button 1 not visible buttonIndex " + buttonIndex);
+					} else {
+						te1next.setAttribute("enabled", true);
+						te1next.setAttribute("visible", true);
+						//Debug.write("next button 1 visible buttonIndex " + buttonIndex);
+					}
+				}
+				break;
+			case 0:
+				te1next.setAttribute("enabled", false);
+				te1next.setAttribute("visible", false);
+				//Debug.write("next button 1 not visible buttonIndex " + buttonIndex);
+				break;
+		}
+	</method>
+<!--	
+	<method name="clearTabslider" args="index, level">
+		//Debug.write(":clearTabslider index '" + index + "' level '" + level + "'");		
+		if(level == 1) {
+			te1chkbx.setAttribute("value", false);
+			rating1.setText("");
+			confidence1.setText("");
+			comments1.setAttribute("text", "");
+		} else
+		if(level == 2) {
+			te2chkbx.setAttribute("value", false);
+			rating2.setText("");
+			confidence2.setText("");
+			comments2.setAttribute("text", "");
+		} else
+		if(level == 3) {
+			te3chkbx.setAttribute("value", false);
+			rating3.setText("");
+			confidence3.setText("");
+			comments3.setAttribute("text", "");
+		}
+	</method>
+-->	
+	<method name="updateTabsliderData" args="chkbx, rating, confidence, comments, index, identifier">
+		if(index != null) {
+			//Debug.write(":updateTabsliderData chkbx.value '" + chkbx.value + "' index '" + index + "' identifier '" + identifier + "'");
+
+			chkbx.setAttribute("datapath", "ds30:/content/section/item[@name='" + index + "']/data[" + identifier + "]/@notapplicable");
+			chkbx.datapath.updateData();
+			
+			comments.setAttribute("datapath", "ds30:/content/section/item[@name='" + index + "']/data[" + identifier + "]/@comments");
+			comments.datapath.updateData();
+
+			//TBD other components here ...
+			
+		}
+	</method>
+	<!-- for some unknown reason, using datapath.updateData() does not work for combobox, thus this method is created -->
+	<method name="updateComboboxListData" args="index, rating, confidence, identifier">
+			//Debug.write(":updateComboboxListData index '" + index + "' rating.value '" + rating.value + "' confidence.value '" + confidence.value 
+			//+ "' identifier '" + identifier + "'");
+
+			dp30.setXPath("ds30:/content/section/item[@name='" + index + "']/data[" + identifier + "]/@rating");
+			dp30.setNodeAttribute("rating", rating.value);
+			dp30.setXPath("ds30:/content/section/item[@name='" + index + "']/data[" + identifier + "]/@confidence");
+			dp30.setNodeAttribute("confidence", confidence.value);
+			//Debug.write("rating node value '" + dp30.getNodeAttribute("rating") + "' set");
+			//Debug.write("confidence node value '" + dp30.getNodeAttribute("confidence") + "' set");
+	</method>
+	<!-- for some unknown reason, using datapath.updateData() does not work for combobox, thus this method is created -->
+	<method name="handleComboboxListSelect" args="index, level">
+		//Debug.write(":handleComboboxListSelect index '" + index + "' level " + level + " " + typeof(level));
+		if(typeof level == 'undefined')
+			level = 1;
+
+		dp30.setXPath("ds30:/content/section/item[@name='" + index + "']/data[" + level + "]/@rating");
+		//Debug.write("rating node value '" + dp30.getNodeAttribute("rating") + "' get");
+		var ratingValue = dp30.getNodeAttribute("rating");
+		dp30.setXPath("ds30:/content/section/item[@name='" + index + "']/data[" + level + "]/@confidence");
+		//Debug.write("confidence node value '" + dp30.getNodeAttribute("confidence") + "' get");
+		var confidenceValue = dp30.getNodeAttribute("confidence");
+
+		if(typeof ratingValue == 'undefined')
+			ratingValue = '';
+		if(typeof confidenceValue == 'undefined')
+			confidenceValue = '';
+		
+		//Debug.write(":handleComboboxListSelect ratingValue '" + ratingValue + "' confidenceValue '" + confidenceValue + "' level '" + level + "' typeof(level) '" + typeof(level) + "'");
+			
+		if(ratingValue == '') {
+			//Debug.write(":handleComboboxListSelect ratingValue '" + ratingValue + "' clearing rating ...");
+			
+			if(level == 1)
+				rating1.setText("");
+			else 
+			if(level == 2)
+				rating2.setText("");
+			else 
+			if(level == 3)
+				rating3.setText("");
+		} else {
+			ratingValue = parseInt(ratingValue);
+			//Debug.write(":handleComboboxListSelect ratingValue '" + ratingValue + "' typeof(ratingValue) '" + typeof(ratingValue) + "' handling switch ...");
+		switch(ratingValue) {
+			//PEFORMANCE ISSUE HERE !!!
+			//TBD - at one point, need to figure out how to improve on this so that not all three are set concurrently;
+			//it works for now, as they are not shown simultaneously on the screen! :)
+			case 0:
+				if(level == 1) {
+					rating1tli1.setAttribute("selected", true);
+				} else 
+				if(level == 2)
+					rating2tli1.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli1.setAttribute("selected", true);
+				break;
+			case 20:
+				if(level == 1)
+					rating1tli2.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					rating2tli2.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli2.setAttribute("selected", true);
+				break;
+			case 40:
+				if(level == 1)
+					rating1tli3.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					rating2tli3.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli3.setAttribute("selected", true);
+				break;
+			case 60:
+				if(level == 1)
+					rating1tli4.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					rating2tli4.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli4.setAttribute("selected", true);
+				break;
+			case 80:
+				if(level == 1)
+					rating1tli5.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					rating2tli5.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli5.setAttribute("selected", true);
+				break;
+			case 100:
+				if(level == 1)
+					rating1tli6.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					rating2tli6.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					rating3tli6.setAttribute("selected", true);
+				break;
+		}
+		}
+		if(confidenceValue == '') {
+			if(level == 1)
+				confidence1.setText("");
+			else 
+			if(level == 2)
+				confidence2.setText("");
+			else 
+			if(level == 3)
+				confidence3.setText("");
+		} else {
+			confidenceValue = parseInt(confidenceValue);
+			
+		switch(confidenceValue) {
+			//PEFORMANCE ISSUE HERE !!!
+			//TBD - at one point, need to figure out how to improve on this so that not all three are set concurrently;
+			//it works for now, as they are not shown simultaneously on the screen! :)
+			case 0:
+				if(level == 1)
+					confidence1tli1.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli1.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli1.setAttribute("selected", true);
+				break; 
+			case 20:
+				if(level == 1)
+					confidence1tli2.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli2.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli2.setAttribute("selected", true);
+				break;
+			case 40:
+				if(level == 1)
+					confidence1tli3.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli3.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli3.setAttribute("selected", true);
+				break;
+			case 60:
+				if(level == 1)
+					confidence1tli4.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli4.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli4.setAttribute("selected", true);
+				break;
+			case 80:
+				if(level == 1)
+					confidence1tli5.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli5.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli5.setAttribute("selected", true);
+				break;
+			case 100:
+				if(level == 1)
+					confidence1tli6.setAttribute("selected", true);
+				else 
+				if(level == 2)
+					confidence2tli6.setAttribute("selected", true);
+				else 
+				if(level == 3)
+					confidence3tli6.setAttribute("selected", true);
+				break;
+		}
+		}
+	</method>
+</library>

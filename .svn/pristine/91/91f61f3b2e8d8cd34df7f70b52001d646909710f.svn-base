@@ -1,0 +1,48 @@
+<?ignore
+A general purpose visual container for a data-driven application.
+Copyright (C) 2006 Alex Lee Chiew Kooi
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+Release 1.0 Build 1000
+?>
+
+<canvas title="Media Explorer" width="100%" height="100%" bgcolor="rgb(190,194,200)">
+	<debug x="500" y="100" height="500" width="600"/>		
+	<include href="library/common.lzx"/>
+	<include href="library/widget.lzx"/>
+
+	<?ignore
+	<dataset name="ds10" request="true" type="http" src="application/jsp/section.jsp"/>
+	<dataset name="ds30" request="true" type="http" src="application/jsp/content.jsp"/>
+	<dataset name="ds10" request="true" type="http" src="application/groovlet/section.groovy"/>
+	<dataset name="ds30" request="true" type="http" src="application/groovlet/content.groovy"/>
+	?>
+	<dataset name="ds10" request="true" type="http" src="application/xml/section.xml"/>
+	<dataset name="ds30" request="true" type="http" src="application/xml/content.xml"/>
+
+	<datapointer  name="dp10" xpath="ds10:/section"/>
+	<datapointer name="dp30" xpath="ds30:/content"/>
+
+	<?ignore <datapointer xpath="ds10:/section" ondata="Debug.write(this.serialize())" /> ?>
+	<bluestyle name="mystyle1" isdefault="true"/>
+	<whitestyle name="defaultstyle"/>
+
+	<mainpresenter id="main"/>
+
+	<secondarypresenter id="secondary">
+	</secondarypresenter>
+
+	<alert id="a" text="Sorry, no help here."/>
+</canvas>

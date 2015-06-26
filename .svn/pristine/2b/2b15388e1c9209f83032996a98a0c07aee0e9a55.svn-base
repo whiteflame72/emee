@@ -1,0 +1,266 @@
+<?ignore
+A general purpose visual container for a data-driven application.
+Copyright (C) 2006 Alex Lee Chiew Kooi
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+Release 1.0 Build 1000
+?>
+<library>
+	<include href="external.lzx"/>
+	<!-- This class acts as a communication medium to the outside class of this component -->
+	<!-- External component interested in the event must instantiate the IPC class -->
+	<!-- begin of IPC class --> 
+	<class name="ipc">
+	        <attribute name="sectionName" type="string"/>
+	        <attribute name="selectedItem" type="string"/>
+	        <attribute name="logo" type="string"/>
+	        <attribute name="summaryVal" type="string"/>
+	        <attribute name="detailedVal" type="string"/>	        
+	        <attribute name="summaryTabName" type="string"/>
+	        <attribute name="detailedTabName" type="string"/>
+	</class>
+	<!-- end of IPC class --> 
+    <class name="mainpresenter">
+		<button id="w1" datapath="ds10:/section" x="5" y="5" width="${canvas.width*.2}" height="${canvas.height - 10}">
+			<attribute name="restracted" value="false" type="boolean"/>
+			<attribute name="savedWidth" value="0" type="number"/>
+
+			<view id="navigator">
+				<view layout="spacing:10">
+					<tabslider id="ts" datapath="ds10:/section" width="${canvas.width*.2}" height="${w1.height - 15}" bordersize="1" spacing="2" bordercolor="0x3A75A3" options="releasetolayout" font="monospace">
+
+						<tabelement datapath="item" selected="false" text_x="20">
+							<view bgcolor="white" placement="header" width="10" height="12" x="5" y="5"/>
+								<attribute name="text" value="$path{'@text'}"/>
+
+								<view name="main" width="${parent.width - 15}" height="${parent.height - 38}" clip="false">
+									<view name="contents">
+
+									<simplelayout spacing="5"/>
+
+									<list name="slist" y="10" width="${ts.width - 38}">
+										<textlistitem name="slisttext" datapath="subject" text="$path{'text()'}" onclick="navigator.loadContentText(this.section, this.text, this.logo);">
+											<attribute name="section" value="$path{'../@name'}"/>
+											<attribute name="logo" value="$path{'@logo'}"/>
+										</textlistitem>
+									</list>
+								</view>
+								<vscrollbar/>
+							</view>
+						</tabelement>
+						<resizelayout axis="y"/>
+					</tabslider>
+				</view>
+
+				<!-- to get the content of the current selected subject -->
+				<method name="loadContentText" args="sectionName,selectedItem,logo">
+					//Debug.write("sectionName '" + sectionName + "'");
+					//Debug.write("selectedItem '" + selectedItem + "'");
+					//Debug.write("logo '" + logo + "'");
+					var summaryVal = dp30.xpathQuery("ds30:/content/section[@name='" + sectionName + "']/item[@name='" + selectedItem + "']/*[1]/text()");
+					var detailedVal = dp30.xpathQuery("ds30:/content/section[@name='" + sectionName + "']/item[@name='" + selectedItem + "']/*[2]/text()");
+					//Debug.write("data[1] '" + summaryVal + "'");
+					//Debug.write("data[2] '" + detailedVal + "'");
+					topicSubject.setAttribute('text',selectedItem);
+					topicSubject.setAttribute('width', 0);
+					topicSubject.setAttribute('height', cover.height + 20);
+					topicSubject.animate('width', summaryTab.width + 1, 200, true);
+
+					var savedWidth = cover.width;
+					var savedHeight = cover.height;
+					var savedZoomRatio = savedWidth/savedHeight;
+					var currentValue = "";
+					//Debug.write('zoom factor = ' + savedZoomRatio);
+					cover.setAttribute("height", 50);
+					cover.setAttribute("width", cover.height*savedZoomRatio);
+					cover.setAttribute("visible", true);
+
+					dp30.setXPath("ds30:/content/section[@name='" + sectionName + "']/item[@name='" + selectedItem + "']/data[1]");
+					currentValue = dp30.getNodeAttribute('text');
+					summaryTab.setAttribute('text',currentValue);
+sectionListener.setAttribute("summaryTabName", currentValue);
+					topic.setAttribute('width', canvas.width - w1.width - 14);	//to avoid lzx bug
+
+					//summaryTabText.setAttribute("text", summaryVal);
+sectionListener.setAttribute("sectionName",sectionName);
+sectionListener.setAttribute("selectedItem",selectedItem);
+sectionListener.setAttribute("logo",logo);
+sectionListener.setAttribute("summaryVal",summaryVal);
+					summaryTabText.setAttribute('x', topicSubjectView.x);
+					summaryTabText.setAttribute('y', topicSubjectView.y + topicSubjectView.height + 10);
+
+					dp30.setXPath("ds30:/content/section[@name='" + sectionName + "']/item[@name='" + selectedItem + "']/data[2]");
+					currentValue = dp30.getNodeAttribute('text');
+					detailedTab.setAttribute('text',currentValue);
+sectionListener.setAttribute("detailedTabName", currentValue);
+					topic.setAttribute('width', canvas.width - w1.width - 14);	//to avoid lzx bug
+
+					//detailedTabText.setAttribute("text", selectedItem + "\n\n" + detailedVal);
+sectionListener.setAttribute("detailedVal",detailedVal);
+					
+					if(logo != null)
+						cover.setAttribute('src',logo);
+					else
+						cover.setAttribute('src','images/default_logo.PNG');
+				</method>
+			</view>
+
+			<handler name="onclick">
+				if(this.restracted) {
+					//topic.animate('width', this.savedWidth, 1000, false);	//does not work !?
+					topic.animate('width', canvas.width - w1.width - 14, 1000, false);
+					this.restracted = false;
+				} else {
+					//this.savedWidth = topic.width;	//does not work !?
+					topic.animate('width', 0, 200, false);
+					this.restracted = true;
+				}
+			</handler>
+			<dropshadow id="ns" datapath="ds10:/section" x="${navigator.x + 2}" y="${navigator.height - 2}" text="$path{'@text'}"/>
+<!--
+			<method event="onclick">
+				w1.setAttribute('enabled',false);	//disable button - does not work !!!
+				ns.setAttribute('text','Refreshing ...');
+				ds10.doRequest();
+				ds30.doRequest();
+				w1.setAttribute('enabled',true);
+			</method>
+-->			
+		</button>
+    </class>
+
+    <class name="secondarypresenter">
+		<button id="topic" datapath="ds30:/content" x="${w1.width + 10}" y="${w1.y + 10}" width="${canvas.width - w1.width - 14}" height="${canvas.height - 20}">
+			<attribute name="restracted" value="false" type="boolean"/>
+			<attribute name="savedWidth" value="0" type="number"/>
+
+			<tabs id="tb" x="0" y="-15" width="${topic.width - 1}" height="${w1.height - 5}">
+				<tabpane id="summaryTab" width="${topic.width - 1}" height="${ts.height}" text="" bgcolor="white">
+					<view id="topicSubjectView" width="${topic.width - 1}">
+						<button id="topicSubject" x="-10" y="10" width="0" height="${cover.height + 20}" clip="true" enabled="false">
+							<image id="cover" src="images/default_logo.PNG" x="10" y="10" stretches="both" visible="false">
+								<attribute name="savedSubjectText"/>
+								<attribute name="savedSummaryText"/>
+								<attribute name="savedWidth"/>
+								<attribute name="savedHeight"/>
+								<attribute name="savedZoomRatio"/>
+								<handler name="onmouseover">
+									<![CDATA[
+									savedWidth = this.width;
+									savedHeight = this.height;
+									savedZoomRatio = savedWidth/savedHeight;
+									savedSubjectText = topicSubject.text;
+									savedSummaryText = summaryTabText.text;
+									//topicSubject.setAttribute('text','');
+									//summaryTabText.setAttribute('text','');
+									this.setAttribute("height", 100);
+									this.setAttribute("width", this.height*savedZoomRatio);
+									//this.setAttribute('alpha',0);	//set opacity, wrong API used !
+									]]>
+								</handler>
+								<handler name="onmouseout">
+									topicSubject.setAttribute('text',savedSubjectText);
+									summaryTabText.setAttribute('text',savedSummaryText);
+									var zoomRatio = 3.84210526315789;
+									this.setAttribute("height", 50);
+									this.setAttribute("width", this.height*zoomRatio);
+								</handler>
+							</image>
+						</button>
+					</view>
+
+					<text id="summaryTabText" x="0" y="${topicSubjectView.y + topicSubjectView.height + 10}" width="${parent.width - 35}" height="${parent.height}" multiline="true" font="monospace"/>
+
+					<external id="ext" initstage="immediate"/>
+					
+				</tabpane>
+				<tabpane id="detailedTab" text="">
+					<text id="detailedTabText" width="${summaryTabText.width}" height="${summaryTabText.height}" multiline="true" font="monospace"/>
+				</tabpane>
+				<handler name="oninit">
+					<![CDATA[
+					/*
+					var view;
+					for (j=0;j< this.subviews.length; j++) {
+						view = this.subviews[j];
+						Debug.write("subview id = '" + view.getId() + "' text = '" + view.getText() + "'");
+					}
+					*/
+					]]>
+				</handler>
+			</tabs>
+
+			<handler name="oninit">
+				<![CDATA[
+//			var dynamicClass = eval('this.tb');
+				//if ( dynamicClass instanceof basetabs )
+				//   Debug.write('dynamicClass is a subclass of basetabs.');
+				//var newChild = dynamicClass.makeChild({name: 'tabpane', attrs: {text: ''}});
+				//newChild.setAttribute('text','New Tab');
+				//TBD
+				]]>
+			</handler>
+			<handler name="ondata">
+				<![CDATA[
+				/*
+				var node, view;
+				for (k=0;k< this.subnodes.length; k++) {
+					node = this.subnodes[k];
+					Debug.write("node id = '" + node.id + "'");
+					if(node.id == 'tb') {
+						for (j=0;j< node.subviews.length; j++) {
+							view = node.subviews[j];
+							Debug.write("subview id = '" + view.getId() + "' text = '" + view.getText() + "'");
+						}
+						node.makeChild({name: 'tabpane', attrs: {text: 'firtDynamicTabPane'}});
+					}
+				}
+				*/
+
+				var att, val;
+				//var attrs = {};
+				dp30.setXPath("ds30:/content/section[@name='EMI']/item[@name='Product']/*[1]");
+				var attr_pointer = dp30.dupePointer();
+				do{
+					att = attr_pointer.getNodeName();
+					val = attr_pointer.getNodeText();
+					//attrs[att] = val;
+					//Debug.write("att = '" + att + "' val = '" + val + "'");
+				}while( attr_pointer.selectNext() );
+
+				]]>
+			</handler>
+			<handler name="onwidth">
+				<![CDATA[
+				if(this.width == 0) {
+					topic.setAttribute("visible", false);
+				} else {
+					topic.setAttribute("visible", true);
+				}
+				//=== this is to address lZX window maximize bug and to support smooth left to right sliding effect of secondarypresenter
+				if(topicSubject != undefined && this.width == (canvas.width - w1.width - 14)) {
+					topicSubject.setAttribute('width', this.width + 1);
+					summaryTab.setAttribute('width', canvas.width - w1.width - 14);
+					topic.setAttribute('width', canvas.width - w1.width - 14);
+					topicSubjectView.setAttribute('width', canvas.width - w1.width - 14);
+				}
+				]]>
+			</handler>
+			<handler name="onheight">
+				tb.setAttribute('height', canvas.height - 10 - 23);	//to avoid lzx bug
+			</handler>
+		</button>
+    </class>
+</library>

@@ -1,0 +1,19 @@
+<library>
+	<ipc name="sectionListener">
+		<!-- listen to attribute change event-->
+		<handler name="onsectionName">
+			Debug.write("changed value '" + sectionName + " " + +selectedItem
+					+ " " + +logo + " " + +summaryVal + " " + +detailedVal
+					+ " " + summaryTabName + " " + detailedTabName);
+			te1text.setAttribute("text", detailedVal);
+		</handler>
+	</ipc>	
+
+	<class name="external">
+		<!-- provide your own implementation here -->
+
+
+
+
+	</class>
+</library>
